@@ -1,0 +1,6 @@
+opt3001.c:26:6:opt3001_writedata	32	static
+opt3001.c:36:10:opt3001_readdata	24	static
+opt3001.c:45:9:opt3001_init	8	static
+opt3001.c:57:7:calculate_lux	32	static
+opt3001.c:71:10:read_devid	16	static
+opt3001.c:82:10:read_manufacturer_id	16	static
