@@ -30,8 +30,8 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 float data;
-unsigned int device;
-unsigned int manu;
+unsigned int deviceID;
+unsigned int manufactureID;
 
 /* USER CODE END PTD */
 
@@ -97,17 +97,16 @@ int main(void)
 
   /* USER CODE END 2 */
 
-  opt3001_init();                                 //Initialize the sensor
-
+  opt3001_init();                                     //Initialize the sensor
   HAL_Delay(50);
-  device=read_devid();                            //Read the device id
-  manu=read_manufacturer_id();                    //Read the manufacturer id
+  deviceID = read_devid();                            //Read the device id
+  manufactureID = read_manufacturer_id();             //Read the manufacturer id
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-     data= calculate_lux();                      //get the ambient light level value from the sensor(in Lux)
+     data = calculate_lux();                         //get the ambient light level value from the sensor(in Lux)
      HAL_Delay(50);
     /* USER CODE BEGIN 3 */
   }
